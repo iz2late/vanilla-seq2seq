@@ -117,7 +117,6 @@ train_iter, valid_iter, test_iter = make_iter()
 for epoch in range(N_EPOCHS):
 
     start_time = time.time()
-    print('mark 1')
     train_loss = train(model, train_iter, optimizer, criterion, CLIP)
     valid_loss = evaluate(model, valid_iter, criterion)
 
